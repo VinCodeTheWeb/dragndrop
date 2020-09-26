@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1366px;
+  height: 768px;
+  margin: 0 auto;
+}
+
+.drag,
+.drop {
+  position: relative;
+  height: calc(768px / 2);
+  flex-basis: 48%;
+  text-align: center;
+}
+
+#draggable-1 {
+  width: 200px;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  background-color: #DDD;
+}
+.drag {
+  border: 1px solid black;
+}
+
+.drop {
+  border: 1px dashed #333;
+}

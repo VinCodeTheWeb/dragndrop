@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Drag'n Drop</title>
+</head>
+<body>
+  <header>
+    <h1>Drag'n Drop</h1>
+    <div class="wrapper">
+      <div 
+        class='drag' 
+      >
+      <span>Dragzone</span>
+        <div 
+          id='draggable-1' 
+          draggable="true"
+          ondragstart='onDragStart(event);'>
+          Drag 1
+        </div>
+
+        <div 
+          id='draggable-1' 
+          draggable="true"
+          ondragstart='onDragStart(event);'>
+          Drag 2
+        </div>
+        <div 
+          id='draggable-1' 
+          draggable="true"
+          ondragstart='onDragStart(event);'>
+          Drag 3
+        </div>
+      </div>
+
+      <div 
+        class='drop'
+        ondragover="onDragOver(event);"
+        ondrop="onDrop(event);"
+      >
+        <span>Dropzone</span>
+      </div>
+    </div>
+  </header>
+  <script src='main.js'></script>
+</body>
+</html>
